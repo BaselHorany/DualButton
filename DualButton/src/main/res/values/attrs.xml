@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DualButton">
+        <attr name="textFirst" format="reference|string"/>
+        <attr name="backgroundColorFirst" format="reference|color" />
+        <attr name="backgroundResFirst" format="reference" />
+        <attr name="textSizeFirst" format = "dimension" />
+        <attr name="textColorFirst" format="reference|color" />
+        <attr name="fontStyleFirst" format="integer"/>
+        <attr name="gravityFirst" format="integer" />
+        <attr name="drawableRightFirst" format="reference" />
+        <attr name="drawableStartFirst" format="reference" />
+        <attr name="drawableLeftFirst" format="reference" />
+        <attr name="drawableEndFirst" format="reference" />
+        <attr name="drawableTopFirst" format="reference" />
+        <attr name="drawableBottomFirst" format="reference" />
+        <attr name="drawablePaddingFirst" format = "dimension" />
+        <attr name="textSecond" format="reference|string"/>
+        <attr name="backgroundColorSecond" format="reference|color" />
+        <attr name="backgroundResSecond" format="reference" />
+        <attr name="textSizeSecond" format = "dimension" />
+        <attr name="textColorSecond" format="reference|color" />
+        <attr name="fontStyleSecond" format="integer"/>
+        <attr name="gravitySecond" format="integer" />
+        <attr name="drawableRightSecond" format="reference" />
+        <attr name="drawableStartSecond" format="reference" />
+        <attr name="drawableLeftSecond" format="reference" />
+        <attr name="drawableEndSecond" format="reference" />
+        <attr name="drawableTopSecond" format="reference" />
+        <attr name="drawableBottomSecond" format="reference" />
+        <attr name="drawablePaddingSecond" format = "dimension" />
+        <attr name="clickableSecond" format="boolean"/>
+        <attr name="duration" format="integer"/>
+        <attr name="dualDirection" format="enum">
+            <enum name="rtl" value="0"/>
+            <enum name="ltr" value="1"/>
+        </attr>
+        <attr name="dualType" format="enum">
+            <enum name="reveal" value="0"/>
+        </attr>
+    </declare-styleable>
+</resources>
