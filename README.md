@@ -12,7 +12,7 @@ a dual Button with some animations
 add it as a dependency to your app `build.gradle`
 ```java
 dependencies {
-  compile 'com.github.BaselHorany:DualButton:1.0.0'
+  compile 'com.github.BaselHorany:DualButton:1.0.1'
 }
 ```
 
