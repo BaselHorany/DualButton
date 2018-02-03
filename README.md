@@ -47,7 +47,10 @@ dependencies {
 
 3-options
 ```xml
-same as usual but ends with First for the 1st button and Second for the 2nd button
+        clickableSecond
+        duration //animation duration
+        dualDirection //animation direction rtl/ltr
+and the same as usual but ends with First for the 1st button and Second for the 2nd button
         textFirst        
         backgroundColorFirst
         backgroundResFirst        
@@ -76,9 +79,7 @@ same as usual but ends with First for the 1st button and Second for the 2nd butt
         drawableTopSecond        
         drawableBottomSecond        
         drawablePaddingSecond
-        clickableSecond
-        duration //animation duration
-        dualDirection //animation direction rtl/ltr
+        
         only basic options
         for more use dualBtn.getFirstButton() dualBtn.getSecondButton()
 ```
