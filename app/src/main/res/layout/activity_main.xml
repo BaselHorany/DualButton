@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#4e4e4e"
-    android:gravity="center">
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_horizontal">
+    android:gravity="center_horizontal">
 
         <ProgressBar
             android:layout_width="wrap_content"
@@ -20,7 +14,19 @@
             android:layout_centerHorizontal="true"
             android:indeterminate="true"
             android:visibility="invisible"
-            android:layout_marginTop="80dp" />
+            android:layout_marginTop="100dp" />
+
+        <com.basel.DualButton.DualButton
+            app:textFirst="START"
+            app:textSecond="CANCEL"
+            app:textColorFirst="#ffffff"
+            app:textColorSecond="#03A9F4"
+            app:backgroundColorFirst="#03A9F4"
+            app:backgroundColorSecond="#ffffff"
+            app:duration="1000"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"/>
 
         <com.basel.DualButton.DualButton
             app:textFirst="START"
@@ -45,10 +51,10 @@
             app:drawableStartFirst="@drawable/ic_get_app_black_24dp"
             app:drawableStartSecond="@drawable/ic_highlight_off_black_24dp"
             app:duration="700"
+            app:dualDirection="rtl"
             android:layout_width="200dp"
             android:layout_height="45dp"
             android:layout_marginTop="15dp"/>
 
-    </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>
