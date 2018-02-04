@@ -4,7 +4,7 @@
 a dual Button with some animations
 
 <p align="center">
-  <img src="https://github.com/BaselHorany/DualButton/blob/master/showcase.gif?raw=true" />
+  <img src="https://github.com/BaselHorany/DualButton/blob/master/showcase2.gif?raw=true" />
 </p>
 
 
