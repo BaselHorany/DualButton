@@ -12,7 +12,7 @@ a dual Button with some animations
 add it as a dependency to your app `build.gradle`
 ```java
 dependencies {
-  compile 'com.github.BaselHorany:DualButton:1.0.1'
+  compile 'com.github.BaselHorany:DualButton:1.1.1'
 }
 ```
 
@@ -49,7 +49,7 @@ dependencies {
 ```xml
         clickableSecond
         duration //animation duration
-        dualDirection //animation direction rtl/ltr
+        dualDirection //animation direction rtl/ltr or default touchPoint as the first example in the gif
 and the same as usual but ends with First for the 1st button and Second for the 2nd button
         textFirst        
         backgroundColorFirst
