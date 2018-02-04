@@ -30,6 +30,7 @@ public class DualButton extends RelativeLayout {
     ValueAnimator dualFlipAnim;
     boolean isDualing;
     boolean secondReveal,secondFlip;
+    int x,y;
 
     public DualButton(Context context) {
         super(context);
@@ -362,23 +363,16 @@ public class DualButton extends RelativeLayout {
         return button2;
     }
 
-
     @Override
     public boolean dispatchTouchEvent(MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_UP) {
+            x = (int)event.getX();
+            y = (int)event.getY();
             onClicked();
         }
         return super.dispatchTouchEvent(event);
     }
 
-
-    @Override
-    public boolean dispatchKeyEvent(KeyEvent event) {
-        if (event.getAction() == KeyEvent.ACTION_UP && (event.getKeyCode() == KeyEvent.KEYCODE_DPAD_CENTER || event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) {
-            onClicked();
-        }
-        return super.dispatchKeyEvent(event);
-    }
 
     public void onClicked() {
         if(!isDualing) {
@@ -395,15 +389,18 @@ public class DualButton extends RelativeLayout {
             case 0:
                 DualReveal(from,to);
                 break;
+                //case you have any idea : ?
         }
     }
 
     public void DualReveal(final Button from,final Button to) {
-        int x = dualDirection==0?(int)from.getX()+getWidth():(int)from.getX();
-        int y = dualDirection==0?(int)from.getY()+getHeight():(int)from.getY();
-        if(from==button2){
-            x = dualDirection==0?(int)from.getX():(int)from.getX()+getWidth();
-            y = dualDirection==0?(int)from.getY():(int)from.getY()+getHeight();
+        if(dualDirection!=0) {
+                x = dualDirection == 1 ? (int) from.getX() + getWidth() : (int) from.getX();
+                y = dualDirection == 1 ? (int) from.getY() + getHeight() : (int) from.getY();
+            if (from == button2) {
+                x = dualDirection == 1 ? (int) from.getX() : (int) from.getX() + getWidth();
+                y = dualDirection == 1 ? (int) from.getY() : (int) from.getY() + getHeight();
+            }
         }
         int startRadius = 0;
         int endRadius = (int) Math.hypot(from.getWidth(), from.getHeight());
