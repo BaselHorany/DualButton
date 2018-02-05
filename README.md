@@ -9,6 +9,15 @@ a dual Button with some animations
 
 
 ## Setup
+1- add jitpack.io repositories to you project `build.gradle`
+```java 
+allprojects {
+	repositories {
+		...
+	        maven { url 'https://jitpack.io' }
+	}
+}
+```
 add it as a dependency to your app `build.gradle`
 ```java
 dependencies {
